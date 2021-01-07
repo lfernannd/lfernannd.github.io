@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face{
+    font-family: PopLight;
+    src: url(/fonts/Poppins-Light.ttf)
+}
+
+@font-face{
+    font-family: PopRegular;
+    src: url(/fonts/Poppins-Medium.ttf)
+}
+
+@font-face{
+    font-family: PopBold;
+    src: url(/fonts/Poppins-Bold.ttf)
+}
+
+.header{
+    font-family: PopRegular;
+    color: black
+    min-height: 15vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-bar{
+    display:flex
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+
+.na-link{
+    text-decoration: none;
+    color: #4A5759;
+}
+
+.nav{
+    padding-left: 5px;
+    margin-right: 20px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpp{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.logo{
+    margin-right: 10px;
+}
+
+a.esp{
+    color: greenyellow;
+}
+
+main{
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns:  5% 0.5fr 2.5fr 2fr 1fr 5% ;
+}
+
+.text-side{
+    grid-column: 3/4;
+}
+
+.princ{
+    font-family: PopBold;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 144px;    
+    display: flex;
+    align-items: center;
+    color: #242D2F;
+}
+
+.sec{
+    font-family: PopLight;
+    font-size: 16px;
+    color: #4A5759;
+    align-self: end;
+    padding-top: 20px;
+}
+
+button{
+    display:flex;
+    background: #E34D4F;
+    border-radius: 54px;
+    width: 200px;
+    height: 45px;
+    margin-top: 25px;
+    border: #E34D4F;
+    color:honeydew;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.joia{
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.bttn{
+    color:white;
+    align-self: center;
+    padding-left: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+button:hover{
+    background: #fc0408;
+    border-radius: 54px;
+    width: 250px;
+    height: 50px;
+    text-decoration: wavy;
+    cursor: pointer;
+}
+
+circle:hover{
+    fill: grey;
+    r:17.5;
+    cursor:pointer
+}
