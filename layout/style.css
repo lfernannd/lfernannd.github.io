@@ -22,14 +22,20 @@
     src: url(/fonts/Poppins-Bold.ttf)
 }
 
+.html,body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}
+
 .header{
     font-family: PopRegular;
     color: black
-    min-height: 15vh;
-    width: 95%;
-    margin: auto;
+    height:15%;
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-evenly;
 }
 
 .nav-bar{
@@ -41,20 +47,29 @@
     justify-content: center;
     align-items: center;
 }
+
+.logo img{
+    height: 100px;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px 0px;
     margin-right: 20px;
     list-style: none;
 }
 
+.marca{
+    padding: 20px;
+    position: relative;
+    right:20px;
+}
 
 .na-link{
     text-decoration: none;
-    color: #4A5759;
+    color: #757777;
 }
 
 .nav{
@@ -78,10 +93,34 @@
     align-items: center;
 }
 
+.wpp-number{
+    font-size: 14px;
+    font-weight: 550;
+    margin-left: 12px;
+    color: #757777
+
+}
+
+.wpp-img{
+    height: 30px;
+}
+
 .ig{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ig-name{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 7px;
+    text-decoration: none;
+    color: #757777
+}
+
+.ig-img{
+    height:25px;
 }
 
 a.logo{
@@ -93,16 +132,20 @@ a.esp{
 }
 
 main{
-    min-height: 85vh;
+    position:relative;
+    height:85%;
     display: grid;
-    grid-template-columns:  5% 0.5fr 2.5fr 2fr 1fr 5% ;
+    grid-template-columns:  5% 0.5fr 2.5fr 0.5fr 1.0fr 3fr 5% ;
 }
 
 .text-side{
     grid-column: 3/4;
+    margin-right: 50px;
 }
 
 .princ{
+    padding-top: 10%;
+    padding-bottom: 5%;
     font-family: PopBold;
     font-weight: 500;
     font-size: 96px;
@@ -131,6 +174,7 @@ button{
     color:honeydew;
     align-items: center;
     justify-content: space-between;
+    margin-left: 250px;
 }
 
 .joia{
@@ -148,16 +192,121 @@ button{
 }
 
 button:hover{
-    background: #fc0408;
+    background: #E34D4F    
     border-radius: 54px;
-    width: 250px;
-    height: 50px;
-    text-decoration: wavy;
+    padding: 5px 5px 5px 5px;
     cursor: pointer;
+    opacity: 0.9;
 }
 
-circle:hover{
+svg.ball circle:hover{
     fill: grey;
-    r:17.5;
+    r:15;
     cursor:pointer
+}
+
+.ear-text .img-side{
+    grid-column: 5/6;
+    height: 500px;
+}
+
+svg{
+    max-width: 557px;
+    max-height: 557px;
+}
+
+#brinco{
+    animation: brinco 3s infinite linear alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes brinco{
+    from{
+        transform: rotateY(-10deg) rotateX(0deg);
+    }
+    to{
+        transform: rotateY(40deg) rotateX(30deg);
+    }
+}
+
+#cabelo{
+    animation: cabelo 3s infinite linear alternate;;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#Vector{
+    transform: scale(1.05)
+}
+
+@keyframes cabelo{
+    from{
+        transform: rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    to{
+        transform: rotateX(-15deg) rotateY(-15deg) scale(1.05);
+    }
+}
+
+#blusa{
+    animation: blusa 3s infinite linear alternate;;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes blusa{
+    from{
+        transform: skewX(0deg);
+    }
+    to{
+        transform: skewX(2.5deg);
+    }
+}
+
+
+#saia{
+    animation: saia 3s infinite linear alternate;;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes saia{
+    from{
+        transform: skewX(0deg);
+    }
+    to{
+        transform: skewX(2.6deg);
+    }
+}
+.circle
+{
+    position: absolute;
+    left: 45%;
+    right: 0%;
+    top: 15%;
+    bottom: 0%;
+    
+}
+
+#Group1{
+    position:absolute;
+    grid-column: 6/7;
+    display:flex ; 
+    flex-direction:column;
+    z-index: -1;
+}
+
+body {
+    -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
+    animation: background 5s cubic-bezier(1,0,0,1) infinite;  
+  }
+  
+
+@-webkit-keyframes backgrounad {
+    0% {background-color:black;}
+    25% {background-color: red;}
+    50% {background-color: rgb(0, 255, 21);}
+    75% {background-color: rgb(238, 255, 0);}
+    100% {background-color:white;}
 }
