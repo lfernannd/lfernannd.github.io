@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face{
+    font-family: PopLight;
+    src: url(/fonts/Poppins-Light.ttf)
+}
+
+@font-face{
+    font-family: PopRegular;
+    src: url(/fonts/Poppins-Medium.ttf)
+}
+
+@font-face{
+    font-family: PopBold;
+    src: url(/fonts/Poppins-Bold.ttf)
+}
+
+.html,body{
+    height:100%;
+    width:100%;
+    
+}
+
+.header{
+    background-color:FF9F0;
+    font-family: PopRegular;
+    color: black
+    height:15vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar{
+    display:flex
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.marca{
+    padding: 20px;
+    position: relative;
+    right:20px;
+}
+
+.na-link{
+    text-decoration: none;
+    color: #757777;
+}
+
+.nav{
+    padding-left: 5px;
+    margin-right: 20px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpp{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpp-number{
+    font-size: 14px;
+    font-weight: 550;
+    margin-left: 12px;
+    color: #757777
+
+}
+
+.wpp-img{
+    height: 30px;
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ig-name{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 7px;
+    text-decoration: none;
+    color: #757777
+}
+
+.ig-img{
+    height:25px;
+}
+
+a.logo{
+    margin-right: 10px;
+}
+
+a.esp{
+    color: #757777;
+}
+
+svg.ball circle:hover{
+    fill: grey;
+    r:15;
+    cursor:pointer
+}
+
+.pag1{
+    max-height: 85vh;
+    display: flex;
+    margin:0;
+
+}
+
+.videos{
+    width: 50vw;
+    overflow:hidden;
+    padding: 0.5% 0 0 13.5%;
+}
+
+.vid1{
+    max-width: min(100%,288px);
+    height: auto;
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    border-radius:40px;
+} 
+
+.background{
+    background-image: url(/images/6brincos.png);
+    width: 50vw;
+    margin-right:0;
+}
+
+.txt{
+    width: 50vw;
+    padding-right: 6%;
+}
+
+.title0{
+    font-size: 2rem;
+    color:#242D2F;
+    font-weight: 450;
+    font-family: PopBold;
+    
+}
+
+.txt p{
+    font-size: 1.12rem;
+    font-family: PopRegular;
+    color:#4A5759;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+button{
+    display:flex;
+    background-color:#D17697;
+    border: 1px solid #D17697;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    }
+
+button a{
+    text-decoration: none;
+    color:#242D2F;
+    font-family: PopRegular;
+
+}
+
+button img{
+    margin-left: 1rem;
+}
+
+button:hover{
+    opacity: 0.8;
+    transform: scale(0.99) translateX(-50%)
+}
+
+.imagens{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imagens img{
+    padding: 1rem;
+    width:100%;
+}
+
+.pag2{
+    min-height: 100vh;
+    display: flex;
+    background: url(/images/Rectangle\ 2.png);
+}
+
+.met1{
+    max-width: 50%;
+
+}
+
+.pag-2{
+    font-size: 1.4rem;
+    color:#242D2F;
+    font-weight: 450;
+    font-family: PopBold;
+    padding-left: 2rem;
+    padding-top: 3.125rem;
+}
+
+.p2{
+    font-size: 1.1rem;
+    font-family: PopRegular;
+    color:#4A5759;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.vid2{
+    width: min(100%,588px);
+    height: auto;
+    margin-top: 3rem;
+    padding-left: 2.1875rem;
+}
+
+.b1, .b2, .b3{
+    font-size: 1.1rem;
+    font-family: PopRegular;
+    color:#4A5759;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    list-style:none;
+    padding-top: 2.5rem;
+   
+}
+
+.background2{
+    background-image: url(/images/4brincos.png);
+    width: 50vw;
+    margin-right:0;
+    background-repeat: no-repeat;
+}
+.cuidar-brinco{
+    font-size: 1.4rem;
+    color:#242D2F;
+    font-weight: 450;
+    font-family: PopBold;
+    padding-left: 1rem;
+    padding-top: 3.125rem;
+}
+
+
