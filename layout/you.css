@@ -1,0 +1,136 @@
+:root{
+    --dark:#242D2F;
+    --ligt:#4A5759;
+    --price:#B4B1FF;
+    --prod:#757777;
+}
+
+@font-face{
+    font-family: PopLight;
+    src: url(/fonts/Poppins-Light.ttf)
+}
+
+@font-face{
+    font-family: PopRegular;
+    src: url(/fonts/Poppins-Medium.ttf)
+}
+
+@font-face{
+    font-family: PopBold;
+    src: url(/fonts/Poppins-Bold.ttf)
+}
+
+html{
+    box-sizing: border-box;
+    font-family: PopRegular;
+    color: black;
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    margin: 0px 50px 0px 50px;
+    background-image: url(/images/back1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom right;
+
+}
+
+.nav{
+    height:15vh;
+}
+
+/* Container */
+
+.container{
+    margin-inline: 5%;
+    height:85vh;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 'intro' 'gallery';
+}
+
+.intro{
+    grid-area: intro; 
+    display:flex;
+}
+
+.intro2{
+    max-height: 5%;
+}
+
+.intro1{
+    color:var(--dark);
+    font-family: PopBold;
+    font-size: 1.45rem;
+}
+
+.gallery{
+    margin-top: 3vh;
+    min-height: 77vh;
+    display: grid;
+    grid-gap: 5vw;
+    grid-area: gallery;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foto1, .foto2-1, .foto2-2, .foto3{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%; 
+    border: 5px solid #6E412A;
+    box-sizing: border-box;
+    border-radius: 30px; 
+}
+
+.g2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 45px;
+}
+
+/* Background */
+
+
+.foto1:hover{
+    transform: scale(1.05);
+} 
+.foto2-1:hover{
+    transform: scale(1.05);
+} 
+.foto2-2:hover{
+    transform: scale(1.05);
+} 
+.foto3:hover{
+    transform: scale(1.05);
+} 
+
+@media(max-width: 681px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .g2{
+        height: 100vh;
+    
+    }
+    .g1{
+        height: 100vh;
+    
+    }
+    .g3{
+        height: 100vh;
+    
+    }
+    body{
+        height: 100%;
+        margin: 0px 50px 0px 50px;
+        background-image: url(/images/back1.png);
+        background-repeat:space;
+        background-clip: border-box;
+        background-attachment:fixed;
+        background-position: bottom right;
+    }
+}
