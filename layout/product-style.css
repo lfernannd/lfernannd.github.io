@@ -309,7 +309,7 @@ img{
 /* Container */
 
 .nav-active{
-    transform:translateX(-10%);
+    transform:translateX(-10.8%);
 }
 
 @keyframes nav-barFade{
